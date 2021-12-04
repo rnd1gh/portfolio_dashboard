@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:portfolio_dashboard/config/constants.dart';
 
-import 'package:provider/provider.dart';
-
 void main() {
   runApp(
     const MyApp(),
