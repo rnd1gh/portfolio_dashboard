@@ -1,18 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:portfolio_dashboard/config/constants.dart';
-import 'package:portfolio_dashboard/home_controller.dart';
-import 'package:portfolio_dashboard/widgets/dashboard_screen.dart';
-import 'package:portfolio_dashboard/widgets/side_menu.dart';
 
 import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => HomeController(),
-      child: const MyApp(),
-    ),
+    const MyApp(),
   );
 }
 
@@ -41,16 +35,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: backgroundColor,
       body: SafeArea(
-        child: Row(
-          children: const [
-            // side menu
-            SideMenu(),
-            // dashboard screen
-            Expanded(
-              child: DashboardScreen(),
-            ),
-          ],
-        ),
+        child: Container(),
       ),
     );
   }
